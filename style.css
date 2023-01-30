@@ -42,6 +42,14 @@ a{
     opacity: .55;
     z-index: -1;
 }
+
+#hello .hello{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}
+
 #hello h1{
     display: block;
     width: fit-content;
@@ -61,6 +69,7 @@ a{
 }
 
 #hello h1:nth-child(3){
+    animation:text_reveal_name ease forwards;
     animation-delay: 3.5s;
 }
 
@@ -74,6 +83,18 @@ a{
     background-color: pink;
     animation: text_reveal_box 1s ease;
     animation-delay: 1s;
+}
+
+#hello h1:nth-child(1) span {
+    animation-delay: 1s;
+}
+
+#hello h1:nth-child(2) span {
+    animation-delay: 2s;
+}
+
+#hello h1:nth-child(3) span {
+    animation-delay: 3s;
 }
 
 #hello .cta{
@@ -113,4 +134,9 @@ a{
     }
 }
 
+@keyframes text_reveal_name {
+    100%{
+        color:pink;
+    }
+}
 /* End Keyframes */
