@@ -22,6 +22,21 @@ a{
    justify-content: center;  
 }
 
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+p{
+    color:black;
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+}
+
 /* Hello Section */
 #hello{
     background-image:url(img/GIF.gif);
@@ -117,7 +132,8 @@ a{
 
 /* End Hello Section */
 
-#services{}
+/* Service section */
+
 #services .services{
     flex-direction: column;
     text-align: center;
@@ -129,7 +145,7 @@ a{
     font-size: 4rem;
     font-weight: 300;
     color: black;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     text-transform: uppercase;
     letter-spacing: .2rem;
     text-align: center;
@@ -139,35 +155,29 @@ a{
     color: pink;
 }
 
-#services .service-top p {
-    font-size: 1.4rem;
-    margin-top: 5px;
-    line-height: 2.5rem;
-    font-weight: 300;
-    letter-spacing: .05rem;
-}
-
 #services .service-bottom{
     display: flex;
+    margin top: 50px;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 #services .service-item{
-    flex-basis: 80%;
+    flex-basis: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    flex-direction: column;
+    flex-direction:column;
     padding: 30px;
-    border-radius: 10px;
-    background-image: url(img/img-1.png);
+    border-radius: 30px;
+    background-image: url(img/img-1.jpg);
     background-size: cover;
-    margin: 10px 5%;
     position: relative;
     z-index: 1;
+    overflow: hidden;
 }
+
 #services .service-item::after{
     content: '';
     position: absolute;
@@ -175,7 +185,7 @@ a{
     top: 0;
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    background-image: linear-gradient(60deg, #533d4d 0%, #806b79 100%);
     opacity: .8;
     z-index: -1;
 }
@@ -223,5 +233,7 @@ a{
         color:pink;
     }
 }
+
+/* End service section*/
 
 /* End Keyframes */
